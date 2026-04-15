@@ -38,6 +38,27 @@
     footer {text-align:center;padding:20px;color:#94a3b8;}
 
     @keyframes fadeIn {from{opacity:0;transform:translateY(20px);}to{opacity:1;transform:translateY(0);}}
+
+    /* About section layout */
+    .about-container {
+      display:flex;
+      gap:40px;
+      align-items:center;
+      flex-wrap:wrap;
+    }
+
+    .about-img {
+      width:250px;
+      height:250px;
+      border-radius:50%;
+      object-fit:cover;
+      border:3px solid #38bdf8;
+    }
+
+    .about-text {
+      flex:1;
+      min-width:250px;
+    }
   </style>
 </head>
 <body>
@@ -66,7 +87,15 @@
 
 <section id="about">
   <h2>About Me</h2>
-  <p>Disciplined Computer Science student with experience in algorithms, software development, and mathematical problem solving. Passionate about building efficient systems and learning new technologies.</p>
+  <div class="about-container">
+    <img class="about-img" src="profile.jpg" alt="Profile Picture">
+    <div class="about-text">
+      <p>
+        Hi, I'm Marvens Barthelemy, but you can also call me Marvens. I'm a Computer Science student at UMass Lowell with hands-on experience in software development, algorithms, and system-level programming.
+        I'm always looking to take on new challenges — whether that's learning a new framework, contributing to a team, or building something from scratch. Outside of tech, you'll find me working out, spending time with people I care about, or just taking breaks to reset and refocus.
+      </p>
+    </div>
+  </div>
 </section>
 
 <section id="education">
@@ -141,3 +170,4 @@
 
 </body>
 </html>
+

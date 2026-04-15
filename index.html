@@ -38,10 +38,6 @@
       z-index: 1000;
     }
 
-    nav h1 {
-      font-size: 20px;
-    }
-
     nav ul {
       display: flex;
       list-style: none;
@@ -60,7 +56,14 @@
     }
 
     .hero h2 {
-      font-size: 42px;
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      color: #94a3b8;
+      max-width: 700px;
+      margin: auto;
     }
 
     .btn {
@@ -86,12 +89,13 @@
       gap: 20px;
     }
 
-    /* ABOUT SECTION */
-    .about-container {
-      display: flex;
-      align-items: center;
-      gap: 40px;
-      flex-wrap: wrap;
+    .project-img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 10px;
+      background: #334155;
     }
 
     .about-img {
@@ -102,9 +106,11 @@
       border: 3px solid #38bdf8;
     }
 
-    .about-text {
-      flex: 1;
-      min-width: 250px;
+    .about-container {
+      display: flex;
+      gap: 40px;
+      flex-wrap: wrap;
+      align-items: center;
     }
 
     footer {
@@ -117,26 +123,28 @@
 
 <body>
 
-<!-- NAVBAR -->
+<!-- NAV -->
 <nav>
   <h1>Marvens</h1>
   <ul>
     <li><a href="#about">About</a></li>
     <li><a href="#projects">Projects</a></li>
-    <li><a href="#skills">Skills</a></li>
+    <li><a href="#coursework">Coursework</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
 </nav>
 
 <!-- HERO -->
 <section class="hero">
-  <h2>Hi, I'm Marvens Barthelemy</h2>
-  <p>Computer Science Student | C++ | Java | Web Developer</p>
+  <h2>Hi, I'm Marvens Barthelemy 👋</h2>
+
+  <p>
+    Computer Science student at UMass Lowell focused on building efficient software systems, web applications, and physics-based simulations. I enjoy turning complex ideas into working projects through C++, JavaScript, and problem-solving. I’m always looking to grow as a developer through hands-on experience, collaboration, and new technical challenges.
+  </p>
 
   <a class="btn" href="#projects">View Projects</a>
-  <a class="btn" href="resume.pdf" target="_blank">Resume</a>
-  <a class="btn" href="https://github.com/MarvensB-05" target="_blank">GitHub</a>
-  <a class="btn" href="https://linkedin.com" target="_blank">LinkedIn</a>
+  <a class="btn" href="resume.pdf">Resume</a>
+  <a class="btn" href="https://github.com/MarvensB-05">GitHub</a>
 </section>
 
 <!-- ABOUT -->
@@ -144,15 +152,11 @@
   <h2>About Me</h2>
 
   <div class="about-container">
-    <img src="profile.jpg" class="about-img" alt="Profile Picture">
+    <img src="profile.jpg" class="about-img">
 
-    <div class="about-text">
-      <p>
-        Hi, I'm Marvens Barthelemy. I'm a Computer Science student at UMass Lowell with hands-on experience in C++, Java, Linux, and web development.
-        I enjoy building systems that solve real problems and learning new technologies through hands-on projects.
-        Outside of tech, I like working out, spending time with friends, and continuously improving myself.
-      </p>
-    </div>
+    <p>
+      I am a Computer Science student at UMass Lowell with experience in C++, Java, Linux, and web development. I enjoy building systems, solving algorithmic problems, and learning new technologies through projects.
+    </p>
   </div>
 </section>
 
@@ -164,37 +168,39 @@
 
     <!-- N-BODY -->
     <div class="card">
-      <h3>N-Body Simulation</h3>
-      <p>High-performance C++ physics simulation modeling gravitational interactions between celestial bodies.</p>
-      <p><b>Tech:</b> C++</p>
+      <img src="nbody.png" class="project-img" alt="NBody Screenshot">
 
-      <a class="btn" href="https://github.com/MarvensB-05/nbody-simulation" target="_blank">
-        GitHub Repo
+      <h3>N-Body Simulation (C++)</h3>
+      <p>Physics-based gravitational simulation of celestial bodies.</p>
+
+      <a class="btn" href="https://github.com/MarvensB-05/nbody-simulation">
+        GitHub
       </a>
     </div>
 
-    <!-- WEATHER APP -->
+    <!-- WEATHER -->
     <div class="card">
-      <h3>Weather App</h3>
-      <p>Web app that displays real-time weather data using OpenWeatherMap API.</p>
-      <p><b>Tech:</b> HTML, CSS, JavaScript, API</p>
+      <img src="weather.png" class="project-img" alt="Weather App Screenshot">
 
-      <a class="btn" href="https://github.com/MarvensB-05/weather-app" target="_blank">
-        GitHub Repo
+      <h3>Weather App</h3>
+      <p>Web app using OpenWeatherMap API to display real-time weather data.</p>
+
+      <a class="btn" href="https://github.com/MarvensB-05/weather-app">
+        GitHub
       </a>
     </div>
 
   </div>
 </section>
 
-<!-- SKILLS -->
-<section id="skills">
-  <h2>Skills</h2>
+<!-- COURSEWORK -->
+<section id="coursework">
+  <h2>Relevant Coursework</h2>
 
   <div class="card">
-    <p><b>Languages:</b> C, C++, Java, JavaScript, Python, HTML, CSS</p>
-    <p><b>Tools:</b> Linux, Git, Docker, AWS</p>
-    <p><b>Soft Skills:</b> Problem Solving, Communication, Teamwork, Adaptability</p>
+    <p>
+      Computing I • Computing II • Computing III • Computing IV • Assembly Language Programming • Logic Design • Computer Architecture • Foundations of Computer Science • Discrete Mathematics I • Discrete Mathematics II
+    </p>
   </div>
 </section>
 
@@ -210,7 +216,7 @@
 </section>
 
 <footer>
-  <p>© 2026 Marvens Barthelemy</p>
+  © 2026 Marvens Barthelemy
 </footer>
 
 </body>

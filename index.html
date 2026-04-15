@@ -4,160 +4,205 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Marvens Barthelemy | Portfolio</title>
+
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
   <style>
-    * {margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
-    body {background:#0f172a;color:#e2e8f0;line-height:1.6;}
-    a {color:#38bdf8;text-decoration:none;}
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #0f172a;
+      color: #e2e8f0;
+      line-height: 1.6;
+    }
+
+    a {
+      color: #38bdf8;
+      text-decoration: none;
+    }
 
     nav {
-      position:fixed;top:0;width:100%;background:rgba(15,23,42,0.9);
-      backdrop-filter:blur(10px);display:flex;justify-content:space-between;
-      padding:15px 40px;z-index:1000;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(15,23,42,0.9);
+      backdrop-filter: blur(10px);
+      display: flex;
+      justify-content: space-between;
+      padding: 15px 40px;
+      z-index: 1000;
     }
-    nav h1 {font-size:20px;}
-    nav ul {display:flex;list-style:none;gap:20px;}
-    nav ul li a:hover {color:#38bdf8;}
 
-    section {padding:100px 40px;max-width:1100px;margin:auto;}
+    nav h1 {
+      font-size: 20px;
+    }
 
-    .hero {text-align:center;padding-top:120px;}
-    .hero h2 {font-size:40px;margin-bottom:10px;animation:fadeIn 1s ease-in-out;}
-    .hero p {color:#94a3b8;}
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 20px;
+    }
 
-    .btn {display:inline-block;padding:10px 20px;background:#38bdf8;color:#0f172a;
-      border-radius:5px;margin:8px;transition:0.3s;}
-    .btn:hover {background:#0ea5e9;}
+    section {
+      padding: 100px 40px;
+      max-width: 1100px;
+      margin: auto;
+    }
 
-    .card {background:#1e293b;padding:20px;border-radius:10px;margin-bottom:15px;
-      transition:transform .3s, box-shadow .3s;}
-    .card:hover {transform:translateY(-5px);box-shadow:0 10px 20px rgba(0,0,0,0.3);}
+    .hero {
+      text-align: center;
+      padding-top: 120px;
+    }
 
-    .grid {display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;}
+    .hero h2 {
+      font-size: 42px;
+    }
 
-    footer {text-align:center;padding:20px;color:#94a3b8;}
+    .btn {
+      display: inline-block;
+      padding: 10px 18px;
+      margin: 8px;
+      background: #38bdf8;
+      color: #0f172a;
+      border-radius: 6px;
+      font-weight: 600;
+    }
 
-    @keyframes fadeIn {from{opacity:0;transform:translateY(20px);}to{opacity:1;transform:translateY(0);}}
+    .card {
+      background: #1e293b;
+      padding: 20px;
+      border-radius: 12px;
+      margin-bottom: 20px;
+    }
 
-    /* About section layout */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    /* ABOUT SECTION */
     .about-container {
-      display:flex;
-      gap:40px;
-      align-items:center;
-      flex-wrap:wrap;
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      flex-wrap: wrap;
     }
 
     .about-img {
-      width:250px;
-      height:250px;
-      border-radius:50%;
-      object-fit:cover;
-      border:3px solid #38bdf8;
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #38bdf8;
     }
 
     .about-text {
-      flex:1;
-      min-width:250px;
+      flex: 1;
+      min-width: 250px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #94a3b8;
     }
   </style>
 </head>
+
 <body>
 
+<!-- NAVBAR -->
 <nav>
   <h1>Marvens</h1>
   <ul>
-    <li><a href="#home">Home</a></li>
     <li><a href="#about">About</a></li>
-    <li><a href="#education">Education</a></li>
-    <li><a href="#experience">Experience</a></li>
     <li><a href="#projects">Projects</a></li>
     <li><a href="#skills">Skills</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
 </nav>
 
-<section id="home" class="hero">
-  <h2>Marvens Barthelemy</h2>
-  <p>Computer Science Student | C++ | Java | Linux | Problem Solver</p>
+<!-- HERO -->
+<section class="hero">
+  <h2>Hi, I'm Marvens Barthelemy</h2>
+  <p>Computer Science Student | C++ | Java | Web Developer</p>
+
   <a class="btn" href="#projects">View Projects</a>
   <a class="btn" href="resume.pdf" target="_blank">Resume</a>
   <a class="btn" href="https://github.com/MarvensB-05" target="_blank">GitHub</a>
   <a class="btn" href="https://linkedin.com" target="_blank">LinkedIn</a>
 </section>
 
+<!-- ABOUT -->
 <section id="about">
   <h2>About Me</h2>
+
   <div class="about-container">
-    <img class="about-img" src="profile.jpg" alt="Profile Picture">
+    <img src="profile.jpg" class="about-img" alt="Profile Picture">
+
     <div class="about-text">
       <p>
-        Hi, I'm Marvens, but you can also call me Marv. I'm a Computer Science student at UMass Lowell with hands-on experience in software development, algorithms, and system-level programming.
-        I'm always looking to take on new challenges — whether that's learning a new framework, contributing to a team, or building something from scratch. Outside of tech, you'll find me working out, spending time with people I care about, or just taking breaks to reset and refocus.
+        Hi, I'm Marvens Barthelemy. I'm a Computer Science student at UMass Lowell with hands-on experience in C++, Java, Linux, and web development.
+        I enjoy building systems that solve real problems and learning new technologies through hands-on projects.
+        Outside of tech, I like working out, spending time with friends, and continuously improving myself.
       </p>
     </div>
   </div>
 </section>
 
-<section id="education">
-  <h2>Education</h2>
-  <div class="card">
-    <h3>University of Massachusetts Lowell</h3>
-    <p>B.S. Computer Science, Minor in Mathematics</p>
-    <p>GPA: 3.4/3.5 | Sep 2023 – May 2027 (Expected)</p>
-  </div>
-</section>
-
-<section id="experience">
-  <h2>Work Experience</h2>
-  <div class="card">
-    <h3>Computer Literacy & Coding Assistant - Boys & Girls Club</h3>
-    <p>Sep 2024 – May 2025</p>
-    <ul>
-      <li>Taught digital skills and introductory coding</li>
-      <li>Designed interactive learning activities</li>
-      <li>Improved communication and problem-solving instruction</li>
-    </ul>
-  </div>
-
-  <div class="card">
-    <h3>Fulfillment Associate - Amazon</h3>
-    <p>May 2024 – Present</p>
-    <ul>
-      <li>Monitored robotic fulfillment systems</li>
-      <li>Troubleshot automated workflow issues</li>
-      <li>Ensured operational efficiency under deadlines</li>
-    </ul>
-  </div>
-</section>
-
-<section id="skills">
-  <h2>Technical Skills</h2>
-  <div class="card">
-    <p><b>Languages:</b> Python, C, C++, Java, JavaScript, HTML, SQL</p>
-    <p><b>Tools:</b> Linux, Git, Docker, AWS, CSS, SSH, Excel</p>
-    <p><b>Soft Skills:</b> Leadership, Communication, Problem Solving, Adaptability</p>
-    <p><b>Languages:</b> English, Haitian Creole, French</p>
-  </div>
-</section>
-
+<!-- PROJECTS -->
 <section id="projects">
   <h2>Projects</h2>
+
   <div class="grid">
+
+    <!-- N-BODY -->
     <div class="card">
-      <h3>N-Body Simulation (C++)</h3>
-      <p>Physics-based orbital simulation using N-body gravitational model.</p>
+      <h3>N-Body Simulation</h3>
+      <p>High-performance C++ physics simulation modeling gravitational interactions between celestial bodies.</p>
+      <p><b>Tech:</b> C++</p>
+
+      <a class="btn" href="https://github.com/MarvensB-05/nbody-simulation" target="_blank">
+        GitHub Repo
+      </a>
     </div>
+
+    <!-- WEATHER APP -->
     <div class="card">
       <h3>Weather App</h3>
-      <p>JavaScript app using OpenWeatherMap API with dynamic UI and error handling.</p>
+      <p>Web app that displays real-time weather data using OpenWeatherMap API.</p>
+      <p><b>Tech:</b> HTML, CSS, JavaScript, API</p>
+
+      <a class="btn" href="https://github.com/MarvensB-05/weather-app" target="_blank">
+        GitHub Repo
+      </a>
     </div>
+
   </div>
 </section>
 
+<!-- SKILLS -->
+<section id="skills">
+  <h2>Skills</h2>
+
+  <div class="card">
+    <p><b>Languages:</b> C, C++, Java, JavaScript, Python, HTML, CSS</p>
+    <p><b>Tools:</b> Linux, Git, Docker, AWS</p>
+    <p><b>Soft Skills:</b> Problem Solving, Communication, Teamwork, Adaptability</p>
+  </div>
+</section>
+
+<!-- CONTACT -->
 <section id="contact">
   <h2>Contact</h2>
+
   <div class="card">
-    <p>Phone: 978-476-8886</p>
     <p>Email: barthelemymarvens@gmail.com</p>
     <p>GitHub: MarvensB-05</p>
     <p>Location: Haverhill, MA</p>
@@ -170,4 +215,3 @@
 
 </body>
 </html>
-

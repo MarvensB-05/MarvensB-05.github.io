@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marvens Barthelemy | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
+    body {background:#0f172a;color:#e2e8f0;line-height:1.6;}
+    a {color:#38bdf8;text-decoration:none;}
+
+    nav {
+      position:fixed;top:0;width:100%;background:rgba(15,23,42,0.9);
+      backdrop-filter:blur(10px);display:flex;justify-content:space-between;
+      padding:15px 40px;z-index:1000;
+    }
+    nav h1 {font-size:20px;}
+    nav ul {display:flex;list-style:none;gap:20px;}
+    nav ul li a:hover {color:#38bdf8;}
+
+    section {padding:100px 40px;max-width:1100px;margin:auto;}
+
+    .hero {text-align:center;padding-top:120px;}
+    .hero h2 {font-size:40px;margin-bottom:10px;animation:fadeIn 1s ease-in-out;}
+    .hero p {color:#94a3b8;}
+
+    .btn {display:inline-block;padding:10px 20px;background:#38bdf8;color:#0f172a;
+      border-radius:5px;margin:8px;transition:0.3s;}
+    .btn:hover {background:#0ea5e9;}
+
+    .card {background:#1e293b;padding:20px;border-radius:10px;margin-bottom:15px;
+      transition:transform .3s, box-shadow .3s;}
+    .card:hover {transform:translateY(-5px);box-shadow:0 10px 20px rgba(0,0,0,0.3);}
+
+    .grid {display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;}
+
+    footer {text-align:center;padding:20px;color:#94a3b8;}
+
+    @keyframes fadeIn {from{opacity:0;transform:translateY(20px);}to{opacity:1;transform:translateY(0);}}
+  </style>
+</head>
+<body>
+
+<nav>
+  <h1>Marvens</h1>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<section id="home" class="hero">
+  <h2>Marvens Barthelemy</h2>
+  <p>Computer Science Student | C++ | Java | Linux | Problem Solver</p>
+  <a class="btn" href="#projects">View Projects</a>
+  <a class="btn" href="resume.pdf" target="_blank">Resume</a>
+  <a class="btn" href="https://github.com/MarvensB-05" target="_blank">GitHub</a>
+  <a class="btn" href="https://linkedin.com" target="_blank">LinkedIn</a>
+</section>
+
+<section id="about">
+  <h2>About Me</h2>
+  <p>Disciplined Computer Science student with experience in algorithms, software development, and mathematical problem solving. Passionate about building efficient systems and learning new technologies.</p>
+</section>
+
+<section id="education">
+  <h2>Education</h2>
+  <div class="card">
+    <h3>University of Massachusetts Lowell</h3>
+    <p>B.S. Computer Science, Minor in Mathematics</p>
+    <p>GPA: 3.4/3.5 | Sep 2023 – May 2027 (Expected)</p>
+  </div>
+</section>
+
+<section id="experience">
+  <h2>Work Experience</h2>
+  <div class="card">
+    <h3>Computer Literacy & Coding Assistant - Boys & Girls Club</h3>
+    <p>Sep 2024 – May 2025</p>
+    <ul>
+      <li>Taught digital skills and introductory coding</li>
+      <li>Designed interactive learning activities</li>
+      <li>Improved communication and problem-solving instruction</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>Fulfillment Associate - Amazon</h3>
+    <p>May 2024 – Present</p>
+    <ul>
+      <li>Monitored robotic fulfillment systems</li>
+      <li>Troubleshot automated workflow issues</li>
+      <li>Ensured operational efficiency under deadlines</li>
+    </ul>
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Technical Skills</h2>
+  <div class="card">
+    <p><b>Languages:</b> Python, C, C++, Java, JavaScript, HTML, SQL</p>
+    <p><b>Tools:</b> Linux, Git, Docker, AWS, CSS, SSH, Excel</p>
+    <p><b>Soft Skills:</b> Leadership, Communication, Problem Solving, Adaptability</p>
+    <p><b>Languages:</b> English, Haitian Creole, French</p>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>N-Body Simulation (C++)</h3>
+      <p>Physics-based orbital simulation using N-body gravitational model.</p>
+    </div>
+    <div class="card">
+      <h3>Weather App</h3>
+      <p>JavaScript app using OpenWeatherMap API with dynamic UI and error handling.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <div class="card">
+    <p>Phone: 978-476-8886</p>
+    <p>Email: barthelemymarvens@gmail.com</p>
+    <p>GitHub: MarvensB-05</p>
+    <p>Location: Haverhill, MA</p>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Marvens Barthelemy</p>
+</footer>
+
+</body>
+</html>

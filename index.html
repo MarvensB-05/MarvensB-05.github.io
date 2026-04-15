@@ -26,7 +26,6 @@
       text-decoration: none;
     }
 
-    /* NAVBAR */
     nav {
       position: fixed;
       top: 0;
@@ -37,6 +36,7 @@
       justify-content: space-between;
       padding: 15px 40px;
       z-index: 1000;
+      align-items: center;
     }
 
     nav h1 {
@@ -56,10 +56,12 @@
       margin: auto;
     }
 
-    /* HERO */
     .hero {
       text-align: center;
       padding-top: 140px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
 
     .hero h2 {
@@ -88,6 +90,13 @@
       padding: 20px;
       border-radius: 12px;
       margin-bottom: 20px;
+    }
+
+    .project-img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 12px;
+      border: 1px solid #334155;
     }
 
     .about-container {
@@ -138,7 +147,7 @@
   <a class="btn" href="#projects">View Projects</a>
   <a class="btn" href="Resume-Marvens_Barthelemy.pdf">Resume</a>
   <a class="btn" href="https://github.com/MarvensB-05">GitHub</a>
-  <a class="btn" href="https://www.linkedin.com/in/" target="_blank">LinkedIn</a>
+  <a class="btn" href="https://www.linkedin.com/in/marvens-barthelemy-2b80042b3/" target="_blank">LinkedIn</a>
 </section>
 
 <!-- ABOUT -->
@@ -159,14 +168,20 @@
   <h2>Projects</h2>
 
   <div class="card">
+    <img class="project-img" src="nbody1.png" alt="N-Body Simulation Screenshot">
+
     <h3>N-Body Simulation</h3>
     <p>Physics-based C++ simulation of gravitational interactions between celestial bodies.</p>
+
     <a class="btn" href="https://github.com/MarvensB-05/nbody-simulation">View Code</a>
   </div>
 
   <div class="card">
+    <img class="project-img" src="weather1.png" alt="Weather App Screenshot">
+
     <h3>Weather App</h3>
     <p>Web app using OpenWeatherMap API to display real-time weather data.</p>
+
     <a class="btn" href="https://github.com/MarvensB-05/weather-app">View Code</a>
   </div>
 </section>

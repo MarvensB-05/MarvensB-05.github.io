@@ -92,7 +92,6 @@ A collaborative software engineering project focused on developing an interactiv
 **University of Massachusetts Lowell**
 
 - Bachelor of Science in Computer Science
-- Minor in Mathematics
 - Expected Graduation: May 2027
 
 **Planned Graduate Studies**

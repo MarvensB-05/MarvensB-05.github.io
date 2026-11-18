@@ -11,7 +11,7 @@ Welcome to my personal portfolio! This website showcases my background, technica
 
 ## About Me
 
-My name is **Marvens Barthelemy**, and I am a Computer Science student at the **University of Massachusetts Lowell**, pursuing a Bachelor of Science in Computer Science with a minor in Mathematics.
+My name is **Marvens Barthelemy**, and I am a Computer Science student at the **University of Massachusetts Lowell**, pursuing a Bachelor of Science in Computer Science. 
 
 I am passionate about software development, data analytics, and using technology to solve real-world problems. Through academic coursework, personal projects, and professional experience, I continue to develop my programming, analytical, and problem-solving skills.
 
